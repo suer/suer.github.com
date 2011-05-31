@@ -66,7 +66,7 @@
 
     <!-- this section shows you most of the styled elements from the general stylesheet -->
     <section class="row" id="styled">
-	  <h2 class="width_16 col">すえひろがりっっっっ! </h2>
+	  <!--h2 class="width_16 col">すえひろがりっっっっ! </h2-->
       <div class="col col_10">
         <article>
           <h2>プロフィール</h2>
@@ -114,75 +114,91 @@
           <h2>Redmineプラグイン一覧</h2>
           <article>
             <h3>レポジトリインクリメンタルサーチプラグイン</h3>
-            <p>
-              Redmine のリポジトリからファイル名をインクリメンタルサーチします。正規表現が利用可能です。
-            </p>
-            <ul>
-              <li><a href="https://github.com/suer/redmine_incr_code_search">ソースコード</a></li>
-              <li><a href="http://d.hatena.ne.jp/suer/20110518/incrcodesearch">解説記事: 隣の人に脅されて Redmine のリポジトリをインクリメンタルサーチするプラグインを書いた</a></li>
-            </ul>
-            <pre class="code">
+            <div class="col col_5">
+              <img class="ss" src="./images/incr.png" />
+            </div>
+            <div class="col col_11 right">
+              <p>
+               Redmine のリポジトリからファイル名をインクリメンタルサーチします。正規表現が利用可能です。
+              </p>
+              <ul>
+                <li><a href="https://github.com/suer/redmine_incr_code_search">ソースコード</a></li>
+                <li><a href="http://d.hatena.ne.jp/suer/20110518/incrcodesearch">解説記事: 隣の人に脅されて Redmine のリポジトリをインクリメンタルサーチするプラグインを書いた</a></li>
+              </ul>
+              <strong>インストール</strong>
+              <pre class="code">
 $ cd $RAILS_ROOT/vender/plugins
 $ git clone git://github.com/suer/redmine_incr_code_search.git
 </pre>
-            <p>
-              <img src="./images/incr.png" width="300px"/>
-            </p>
+            </div>
+            <div class="clear"></div><!-- clear -->
           </article>
 
           <article>
             <h3>Redmine MS Project プラグイン</h3>
-            <p>
-              MS Projectで引いた線表から、Redmineのチケットを作成します。
-              Sub Taskingにも対応しています。
-            </p>
-            <p>ちなみに Excel で作成した線表なんて存在してないので、対応していません。</p>
-            <ul>
-              <li><a href="https://github.com/suer/redmine_ms_projects">ソースコード</a></li>
-              <li><a href="http://d.hatena.ne.jp/suer/20101025/redmine_msp_plugin">解説記事: Redmine MS Project プラグインをSubTaskingに対応した</a></li>
-            </ul>
-            <pre class="code">
+            <div class="col col_5">
+              <img class="ss" src="./images/redmine_msp_plugin.png" />
+            </div>
+            <div class="col col_11 right">
+              <p>
+                MS Projectで引いた線表から、Redmineのチケットを作成します。
+                Sub Taskingにも対応しています。
+              </p>
+              <p>ちなみに Excel で作成した線表なんて存在してないので、対応していません。</p>
+              <ul>
+                <li><a href="https://github.com/suer/redmine_ms_projects">ソースコード</a></li>
+                <li><a href="http://d.hatena.ne.jp/suer/20101025/redmine_msp_plugin">解説記事: Redmine MS Project プラグインをSubTaskingに対応した</a></li>
+              </ul>
+              <pre class="code">
 $ cd $RAILS_ROOT/vender/plugins
 $ git clone git://github.com/suer/redmine_iphone_plugin.git
 </pre>
+            </div>
+            <div class="clear"></div><!-- clear -->
           </article>
 
           <article>
             <h3>ワークフロー可視化プラグイン</h3>
-            <p>
-              Redmineのワークフローを可視化します。
-              日本語には対応していません。
-            </p>
-            <ul>
-              <li><a href="http://github.com/suer/redmine_workflow_viz">ソースコード</a></li>
-              <li><a href="http://d.hatena.ne.jp/suer/20100821/workflow_viz_plugin">解説記事: Redmine のワークフロー視覚化をプラグイン化してみた。</a></li>
-            </ul>
-            <pre class="code">
+            <div class="col col_5">
+              <img class="ss" src="./images/flow.png" />
+            </div>
+            <div class="col col_11 right">
+              <p>
+                Redmineのワークフローを可視化します。
+                日本語には対応していません。
+              </p>
+              <ul>
+                <li><a href="http://github.com/suer/redmine_workflow_viz">ソースコード</a></li>
+                <li><a href="http://d.hatena.ne.jp/suer/20100821/workflow_viz_plugin">解説記事: Redmine のワークフロー視覚化をプラグイン化してみた。</a></li>
+              </ul>
+              <pre class="code">
 $ cd $RAILS_ROOT/vender/plugins
 $ git clone git://github.com/suer/redmine_workflow_viz.git
 </pre>
-            <p>
-              <img src="./images/flow.png" width="350px"/>
-            </p>
+            </div>
+            <div class="clear"></div><!-- clear -->
           </article>
 
           <article>
             <h3>iPhone UIプラグイン</h3>
-            <p>
-              RedmineにiPhone UIを追加します。
-              <a href="https://github.com/techbang/redmine_iphone_plugin">techbang</a>氏の同名プラグインをforkしています。
-            </p>
-            <ul>
-              <li><a href="http://github.com/suer/redmine_iphone_plugin">ソースコード</a></li>
-              <li><a href="http://d.hatena.ne.jp/suer/20101024/redmine_iphone_ui_plugin">解説記事: Redmine iPhone UI プラグインを 1.0.0 対応しました</a></li>
-            </ul>
-            <pre class="code">
+            <div class="col col_5">
+              <img class="ss" src="./images/iphone.png" />
+            </div>
+            <div class="col col_11 right">
+              <p>
+                RedmineにiPhone UIを追加します。
+                <a href="https://github.com/techbang/redmine_iphone_plugin">techbang</a>氏の同名プラグインをforkしています。
+              </p>
+              <ul>
+                <li><a href="http://github.com/suer/redmine_iphone_plugin">ソースコード</a></li>
+                <li><a href="http://d.hatena.ne.jp/suer/20101024/redmine_iphone_ui_plugin">解説記事: Redmine iPhone UI プラグインを 1.0.0 対応しました</a></li>
+              </ul>
+              <pre class="code">
 $ cd $RAILS_ROOT/vender/plugins
 $ git clone git://github.com/suer/redmine_iphone_plugin.git
 </pre>
-            <p>
-              <img src="./images/iphone.png" width="200px"/>
-            </p>
+            </div>
+            <div class="clear"></div><!-- clear -->
           </article>
 
     <footer class="row">
