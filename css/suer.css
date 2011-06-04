@@ -39,3 +39,7 @@ footer {
   border-top: 1px solid #ccc;
 }
 
+::selection {
+  background: #6baee6;
+  color: #fff;
+}
