@@ -381,6 +381,29 @@ $ git clone git://github.com/suer/redmine_workflow_viz.git
             <div class="clear"></div><!-- clear -->
           </article>
 
+          <article>
+            <h3>Webhook プラグイン</h3>
+            <div class="col col_5">
+              <img class="ss" src="./images/redmine_webhook.png" />
+            </div>
+            <div class="col col_11 right">
+              <p>
+                チケットの追加・更新にフックして、他のサイトに HTTP で POST する機能を追加します。
+              </p>
+              <ul>
+                <li><a href="https://github.com/suer/redmine_webhook">ソースコード</a></li>
+                <li><a href="http://d.hatena.ne.jp/suer/20140303/redmine_webhook">Redmine に Webhook を追加するプラグインを作った</a></li>
+              </ul>
+              <strong>インストール</strong>
+              <pre class="code">
+$ cd $RAILS_ROOT/plugins
+$ git clone git://github.com/suer/redmine_webhook.git
+$ rake redmine:plugins:migrate RAILS_ENV=production
+</pre>
+            </div>
+            <div class="clear"></div><!-- clear -->
+          </article>
+
         <h2>過去のプラグイン</h2>
           <article>
             <h3>Redmine MS Project プラグイン</h3>
