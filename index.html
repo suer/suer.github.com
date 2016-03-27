@@ -429,6 +429,75 @@ $ rake redmine:plugins:migrate RAILS_ENV=production
             <div class="clear"></div><!-- clear -->
           </article>
 
+          <article>
+            <h3>管理者 class プラグイン</h3>
+            <div class="col col_5">
+              <img class="ss" src="./images/redmine_admin_class.png" />
+            </div>
+            <div class="col col_11 right">
+              <p>
+                管理者の時のみ body に class="admin" 属性を付与するプラグインです。
+                CSS で管理者だけ見た目を変えることが可能になります。
+              </p>
+              <ul>
+                <li><a href="https://github.com/suer/redmine_admin_class">ソースコード</a></li>
+                <li><a href="http://d.hatena.ne.jp/suer/20150603/redmine_admin_class">管理者権限でログインしているかどうかをひと目で分かるようにする Redmine プラグインを作った</a></li>
+              </ul>
+              <strong>インストール</strong>
+              <pre class="code">
+$ cd $RAILS_ROOT/plugins
+$ git clone git://github.com/suer/redmine_admin_class.git
+</pre>
+            </div>
+            <div class="clear"></div><!-- clear -->
+          </article>
+
+          <article>
+            <h3>Glance Year プラグイン</h3>
+            <div class="col col_5">
+              <img class="ss" src="./images/redmine_glanceyear.png" />
+            </div>
+            <div class="col col_11 right">
+              <p>
+                Redmine 内での活動を GitHub のように表示するプラグインです。
+              </p>
+              <ul>
+                <li><a href="https://github.com/suer/redmine_glanceyear">ソースコード</a></li>
+                <li><a href="http://d.hatena.ne.jp/suer/20150713/redmine_glanceyear">Redmine で Github のように草を生やすプラグインを作った</a></li>
+              </ul>
+              <strong>インストール</strong>
+              <pre class="code">
+$ cd $RAILS_ROOT/plugins
+$ git clone git://github.com/suer/redmine_glanceyear.git
+</pre>
+            </div>
+            <div class="clear"></div><!-- clear -->
+          </article>
+
+          <article>
+            <h3>絵文字プラグイン</h3>
+            <div class="col col_5">
+              <img class="ss" src="./images/redmine_emoji.png" />
+            </div>
+            <div class="col col_11 right">
+              <p>
+                Redmine に絵文字を表示、入力する機能を追加します。
+              </p>
+              <ul>
+                <li><a href="https://github.com/suer/redmine_emoji">ソースコード</a></li>
+                <li><a href="http://d.hatena.ne.jp/suer/20160323/redmine_emoji">Redmine で Github のように絵文字を入力できるプラグインを作った</a></li>
+              </ul>
+              <strong>インストール</strong>
+              <pre class="code">
+$ cd $RAILS_ROOT/plugins
+$ git clone git://github.com/suer/redmine_emoji.git
+$ cd $RAILS_ROOT
+$ bundle install
+</pre>
+            </div>
+            <div class="clear"></div><!-- clear -->
+          </article>
+
         <h2>過去のプラグイン</h2>
           <article>
             <h3>Redmine MS Project プラグイン</h3>
