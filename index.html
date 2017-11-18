@@ -33,6 +33,7 @@
 	  #grid div > .col {border-bottom:1px solid #ccc; padding:10px 0px; outline:1px solid #eee;}
 
 	  h2 {border-bottom:1px dashed #ccc; margin-top:15px;}
+    .fork { color: #777; font-size: 0.8em; }
 
 	  .documentation {display:block; background-color:#eee; padding:6px 13px; font-family:Georgia, "Times New Roman", Times, serif; color:#666; text-align:right; text-shadow:-1px -1px 0px #fff;}
 
@@ -287,7 +288,7 @@ $ git clone git://github.com/suer/redmine_readme.git
           </article>
 
           <article>
-            <h3>OAuth プロバイダ</h3>
+            <h3>OAuth プロバイダ <span class="fork">(fork)</span></h3>
             <div class="col col_5">
               <img class="ss" src="./images/redmine_oauth.png" />
             </div>
@@ -499,6 +500,58 @@ $ bundle install
             <div class="clear"></div><!-- clear -->
           </article>
 
+          <article>
+            <h3>テーブルを Markdown 形式で貼り付けプラグイン</h3>
+            <div class="col col_5">
+              <img class="ss" src="./images/redmine_paste_as_markdown_tables.png" />
+            </div>
+            <div class="col col_11 right">
+              <p>
+                誰でも簡単にテーブルが書けるように Excel からコピペでできます。
+              </p>
+              <ul>
+                <li><a href="https://github.com/suer/redmine_paste_as_markdown_tables">ソースコード</a></li>
+                <li><a href="http://d.hatena.ne.jp/suer/20170827/redmine_paste_as_markdown_tables">Excel から Markdownのテーブル形式で簡単に貼り付けられる Redmine プラグインを作った</a></li>
+              </ul>
+              <strong>インストール</strong>
+              <pre class="code">
+$ cd $RAILS_ROOT/plugins
+$ git clone git://github.com/suer/redmine_paste_as_markdown_tables.git
+</pre>
+            </div>
+            <div class="clear"></div><!-- clear -->
+          </article>
+
+          <article>
+            <h3>Bitbucket Hook プラグイン <span class="fork">(fork)</span></h3>
+            <div class="col col_5">
+              <img class="ss" src="./images/redmine_bitbucketgit_hook.png" />
+            </div>
+            <div class="col col_11 right">
+              <p>
+                Bitbucket に push したコミットを Redmine のリポジトリに取り込むプラグインです。
+							  本家の機能に加え、以下の機能追加をしています。
+								<ul>
+								  <li>Rails 4 に対応</li>
+								  <li>Bitbucket の Webhook 設定に対応</li>
+								  <li>git コマンドを Redmine の設定から取得できるように変更</li>
+								</ul>
+              </p>
+              <ul>
+                <li><a href="https://github.com/suer/redmine_bitbucketgit_hook">ソースコード</a></li>
+                <li><a href="http://d.hatena.ne.jp/suer/20170828/redmine_bitbucketgit_hook">Redmine Bitbucket Hook プラグインを fork して最新の Redmine で使えるようにした</a></li>
+              </ul>
+              <strong>インストール</strong>
+              <pre class="code">
+$ cd $RAILS_ROOT/plugins
+$ git clone git://github.com/suer/redmine_bitbucketgit_hook.git
+$ cd $RAILS_ROOT
+$ bundle install
+</pre>
+            </div>
+            <div class="clear"></div><!-- clear -->
+          </article>
+
         <h2>過去のプラグイン</h2>
           <article>
             <h3>Redmine MS Project プラグイン</h3>
@@ -525,7 +578,7 @@ $ git clone git://github.com/suer/redmine_msp_plugin.git
           </article>
 
           <article>
-            <h3>iPhone UIプラグイン</h3>
+            <h3>iPhone UIプラグイン <span class="fork">(fork)</span></h3>
             <div class="col col_5">
               <img class="ss" src="./images/iphone.png" />
             </div>
